@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delegation</title>
+    <style>
+        body{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        div{
+            width: 50px;
+            height: 50px;
+            box-shadow: 0 0 5px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background: linear-gradient(130deg,rgb(114, 64, 64),rgb(28, 129, 147),rgb(79, 137, 156));
+            color: #fff;
+            cursor: pointer;
+        }
+        div:active{
+            background-color: rgb(173, 124, 219);
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+    <script>
+        const parent = document.querySelector("body");
+        count = 1;
+        for(let i = 1; i <= 100; i++){
+            const child = document.createElement("div");
+            child.innerText = count++
+            parent.append(child);
+
+            child.addEventListener('click', (e) => {
+                // console.log(e);
+                child.remove();
+            })
+        }
+
+
+    </script>
+</html>
