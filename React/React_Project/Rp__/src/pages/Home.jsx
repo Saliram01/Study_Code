@@ -7,29 +7,21 @@ function Home() {
 
   return (
     <>
-      <div className="w-full h-screen bg-[#1C0E2B]">
+      <div className="w-full min-h-screen bg-[#1C0E2B]">
         <Header />
-        <div className="grid sm:grid-cols-2 place-content-center  h-[91vh] md:p-2">
-          <div className="flex flex-col justify-center lg:pl-40 items-center order-2 sm:order-1 text-white">
-            <h1 className="text-md lg:text-2xl">Hi,I am saliram chaudhary.</h1>
-
-            <h2 className="py-2 text-center text-2xl text-bold sm:text-5xl lg:text-6xl">
-              A Creative Designer <br /> Based in India.
-            </h2>
-            <p className="pb-4 md:pb-6 text-center px-4 sm:text-md md:py-4">
-              I design and code beautifully simple things and i love  what i do. <br />
-              Just simple like that!
+        <div className="w-full h-[90vh] grid md:grid-cols-2 px-4 md:px-8 xl:px-44">
+          <div className="text-white grid place-content-center text-center sm:px-34 gap-2 lg:gap-4 xs:order-2 order-1">
+            <h1 className="text-xl md:text-2xl font-bold">Hello I'm</h1>
+            <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-green-400">Saliram Chaudhary</h2>
+            <p className="text-xl font-bold">Web Developer From Nepal</p>
+            <p className="mb-4 font-bold">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br /> Iure
+              corrupti iusto ea, ut nulla amet.
             </p>
-
-            <Button />
+            <div><Button /></div>
           </div>
-
-          <div className="grid place-content-center mb-8 sm:order-2 order-1">
-            <img
-              className="w-40 sm:w-60 md:w-80 border-8 shadow-2xl border-b-green-500"
-              src={pic}
-              alt="image"
-            />
+          <div className="grid place-content-center md:order-2">
+            <img className="w-60 md:w-[280px] lg:w-80 border-8 border-b-green-500" src={pic} alt="image" />
           </div>
         </div>
       </div>
