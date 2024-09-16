@@ -20,7 +20,7 @@ function Home() {
             </p>
             <div><Button /></div>
           </div>
-          <div className="grid place-content-center md:order-2">
+          <div className="grid place-content-center md:order-2 py-14">
             <img className="w-60 md:w-[280px] lg:w-80 border-8 border-b-green-500" src={pic} alt="image" />
           </div>
         </div>

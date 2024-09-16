@@ -3,7 +3,7 @@ import Header from '../head/Header'
 
 function Contact() {
   return (
-  <div className='w-full h-screen bg-[#605e64]'>
+  <div className='w-full h-screen bg-slate-500'>
        <Header/>
   </div>
   )

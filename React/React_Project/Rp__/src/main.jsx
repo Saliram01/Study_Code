@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Project from "./pages/Project";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import BlogDetail from "./pages/BlogDetail";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
     path: "contact",
     element: <Contact />,
   },
+  {
+    path : 'blog/:id',
+    element : <BlogDetail/>
+  }
 ]);
 
 createRoot(document.getElementById("root")).render(
