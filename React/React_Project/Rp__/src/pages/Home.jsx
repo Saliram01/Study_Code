@@ -1,27 +1,33 @@
-import { React, useState } from "react";
+import { React } from "react";
 import Header from "../head/Header";
 import pic from "../assets/sa.jpeg";
 import Button from "./Button";
 function Home() {
-  const [projectList, setProjectList] = useState(false);
-
   return (
     <>
-      <div className="w-full min-h-screen bg-[#1C0E2B]">
+      <div className="w-full min-h-screen ">
         <Header />
-        <div className="w-full h-[90vh] grid md:grid-cols-2 px-4 md:px-8 xl:px-44">
-          <div className="text-white grid place-content-center text-center sm:px-34 gap-2 lg:gap-4 xs:order-2 order-1">
-            <h1 className="text-xl md:text-2xl font-bold">Hello I'm</h1>
-            <h2 className="text-xl md:text-3xl lg:text-4xl font-bold text-green-400">Saliram Chaudhary</h2>
-            <p className="text-xl font-bold">Web Developer From Nepal</p>
-            <p className="mb-4 font-bold">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br /> Iure
-              corrupti iusto ea, ut nulla amet.
+        <div className="w-full h-[90vh] grid md:grid-cols-2 px-4 md:px-8 xl:px-32">
+          <div className="grid place-content-center sm:px-34 space-y-3 lg:gap-4 xs:order-2 order-1 py-3 md:py-0 text-center md:text-start">
+            <h1 className="text-xl md:text-3xl font-bold text-[#2A1454]">Hello I'm</h1>
+            <h2 className="text-xl md:text-3xl lg:text-5xl font-bold text-[#4F2C96]">
+              Saliram Chaudhary
+            </h2>
+            <p className="text-2xl font-bold text-[#4F2C96]">Web Developer From Nepal</p>
+            <p className="mb-4 text-xl font-bold text-[#616161]">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br />{" "}
+              Iure corrupti iusto ea, ut nulla amet.
             </p>
-            <div><Button /></div>
+            <div>
+              <Button />
+            </div>
           </div>
           <div className="grid place-content-center md:order-2 py-14">
-            <img className="w-60 md:w-[280px] lg:w-80 border-8 border-b-green-500" src={pic} alt="image" />
+            <img
+              className="w-60 md:w-[280px] rotate-6 hover:rotate-0 transition-all lg:w-[330px] border-8 border-b-green-400 rounded-3xl"
+              src={pic}
+              alt="image"
+            />
           </div>
         </div>
       </div>

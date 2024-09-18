@@ -3,8 +3,11 @@ import Header from '../head/Header'
 
 function About() {
   return (
-    <div className="w-full h-screen bg-slate-500">
+    <div className="w-full h-screen bg-white">
       <Header/>
+      <div className='px-24'>
+        
+      </div>
     </div>
   )
 }
