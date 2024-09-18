@@ -6,8 +6,8 @@ function Project() {
   return (
     <section className='w-full h-screen'>
         <Header/>
-        <div className="max-w-screen mx-auto h-[710px] bg-gradient-to-t to-white from-purple-800">
-            <h1 className='w-full text-center py-12 text-4xl font-semibold text-green-700 underline'>My Project Lists</h1>
+        <div className="max-w-screen mx-auto h-[712px] bg-gradient-to-t to-white from-purple-900">
+            <h1 className='w-full font-serif text-center py-12 text-4xl font-semibold text-green-700 underline'>My Project Lists</h1>
             <div className="max-w-[1320px] mx-auto flex justify-center items-center flex-wrap gap-5 py-8 px-4">
 
             <Link to={'/bgchanger'}>

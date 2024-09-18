@@ -11,6 +11,8 @@ function Header() {
   const handleSubmit = (evt) => {
     console.log(email);
     console.log(password);
+    setEmail('')
+    setPassword('')
     evt.preventDefault();
   };
 
@@ -23,19 +25,19 @@ function Header() {
         </Link>
         <ul className="hidden md:grid grid-flow-col place-content-center content-center gap-12 cursor-pointer font-bold">
           <Link to={"/"}>
-            <li className="hover:text-green-500">Home</li>
+            <li className="hover:text-green-600">Home</li>
           </Link>
           <Link to={"/about"}>
-            <li className="hover:text-green-500 ">About</li>
+            <li className="hover:text-green-600 ">About</li>
           </Link>
           <Link to={'/project'} onClick={() => setShowProject(!showProject)}>
-            <li className="hover:text-green-500 ">Project</li>
+            <li className="hover:text-green-600 ">Project</li>
           </Link>
           <Link to={"/blog"}>
-            <li className="hover:text-green-500 ">Blog +</li>
+            <li className="hover:text-green-600 ">Blog +</li>
           </Link>
           <Link to={"/contact"}>
-            <li className="hover:text-green-500 ">Contact</li>
+            <li className="hover:text-green-600 ">Contact</li>
           </Link>
         </ul>
 
@@ -101,7 +103,7 @@ function Header() {
               <label htmlFor="">Show Password</label>
             </div>
             <div className="my-4">
-              <button className="py-2 w-full bg-green-500 rounded-full text-white">
+              <button className="py-2 w-full  rounded-full border-2 bg-green-500 text-white active:bg-green-400">
                 Sign In
               </button>
             </div>
