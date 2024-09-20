@@ -5,6 +5,7 @@ function Header() {
   const [showMenu, setShowMenu] = useState(false);
   const [signIn, setSignIn] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
+  // const [active ,setActive] = useState(0);
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -15,6 +16,7 @@ function Header() {
     setPassword('')
     evt.preventDefault();
   };
+  
 
   return (
     // Navbar
@@ -25,7 +27,7 @@ function Header() {
         </Link>
         <ul className="hidden md:grid grid-flow-col place-content-center content-center gap-12 cursor-pointer font-bold">
           <Link to={"/"}>
-            <li className="hover:text-green-600">Home</li>
+            <li className="hover:text-green-600 ">Home</li>
           </Link>
           <Link to={"/about"}>
             <li className="hover:text-green-600 ">About</li>
@@ -114,12 +116,12 @@ function Header() {
               </p>
             </div>
           </div>
-          <span
+          <p
             onClick={() => setSignIn(false)}
-            className="fixed text-3xl text-red-600 -top-2 right-1 cursor-pointer hover:text-red-400"
+            className="fixed text-3xl text-[#919191] -top-2 right-1 font-semibold cursor-pointer hover:text-red-600"
           >
             &times;
-          </span>
+          </p>
         </form>
       </div>
 
