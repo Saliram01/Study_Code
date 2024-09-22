@@ -3,6 +3,7 @@ import Header from "../head/Header";
 import { Link } from "react-router-dom";
 import CardSearchBar from "./CardSearchBar";
 import CardSelectMenu from "./CardSelectMenu";
+import BlogSimmer from "./BlogSimmer";
 
 function Blog() {
   const [search, setSearch] = useState("");
@@ -17,6 +18,10 @@ function Blog() {
         setApiData(data.products);
       });
   }, []);
+
+  if(data.length === 0 ){
+    return(<BlogSimmer/>)
+  }
 
   return (
     <div className="bg-white">
@@ -38,8 +43,7 @@ function Blog() {
               .map((v, i) => {
                 return (
                   <Link to={`/blog/${v.id}`} key={i}>
-                    <div
-                      className="w-64 h-80 p-4 shadow-xl mb-4 bg-white rounded-md cursor-pointer">
+                    <div className="w-64 h-80 p-4 shadow-xl mb-4 bg-white rounded-md cursor-pointer">
                       <div className="h-60">
                         <img className="" src={v.image} alt="" />
                       </div>

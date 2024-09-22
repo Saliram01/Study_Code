@@ -55,6 +55,11 @@ function Header() {
         </p>
       </div>
 
+    {/* mood */}
+    <div className="">
+      <span></span>
+    </div>
+
       {/* Login button popup  */}
       <div
         onClick={() => setSignIn(false)}
