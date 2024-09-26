@@ -21,6 +21,8 @@ function BlogDetail() {
     })();
   }, [itemId]);
 
+  if(!blgos){return (<BlogDetailSimmer/>)}
+
   return (
     <div className="bg-white">
       <Header />

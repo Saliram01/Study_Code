@@ -5,34 +5,33 @@ function Header() {
   const [showMenu, setShowMenu] = useState(false);
   const [signIn, setSignIn] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
-  // const [active ,setActive] = useState(0);
+  const [mood, setMood] = useState(false);
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const handleSubmit = (evt) => {
     console.log(email);
     console.log(password);
-    setEmail('')
-    setPassword('')
+    setEmail("");
+    setPassword("");
     evt.preventDefault();
   };
-  
 
   return (
     // Navbar
     <div className="w-full shadow">
       <div className="max-w-[1325px] mx-auto h-16 px-4 flex justify-between  items-center text-[#443169]">
         <Link to={"/"}>
-          <h1 className="font-bold text-xl">Portfolio</h1>
+          <h1 className="font-bold text-xl md:w-[10%]">Portfolio</h1>
         </Link>
-        <ul className="hidden md:grid grid-flow-col place-content-center content-center gap-12 cursor-pointer font-bold">
+        <ul className="hidden md:grid grid-flow-col place-content-center content-center gap-12 cursor-pointer font-bold md:w-[70%]">
           <Link to={"/"}>
             <li className="hover:text-green-600 ">Home</li>
           </Link>
           <Link to={"/about"}>
             <li className="hover:text-green-600 ">About</li>
           </Link>
-          <Link to={'/project'} onClick={() => setShowProject(!showProject)}>
+          <Link to={"/project"} onClick={() => setShowProject(!showProject)}>
             <li className="hover:text-green-600 ">Project</li>
           </Link>
           <Link to={"/blog"}>
@@ -43,22 +42,31 @@ function Header() {
           </Link>
         </ul>
 
+        {/* mood */}
+        <div className="flex justify-center sm:justify-end md:justify-center items-center rounded-full cursor-pointer w-[75%] md:w-8 pt-2">
+          <span onClick={() => setMood(!mood)}>
+            {mood ? (
+              <i className="fa-regular fa-sun text-md"></i>
+            ) : (
+              <i className="fa-solid fa-moon text-md"></i>
+            )}
+          </span>
+        </div>
+
         <button
           onClick={() => setSignIn(!signIn)}
-          className="h-[36px] border-2  hover:border-purple-900 px-6 font-bold rounded-full delay-75 transition-all hidden md:block">Sign in</button>
+          className="h-[36px] border-2  hover:border-purple-900 px-6 font-bold rounded-full delay-75 transition-all hidden md:block"
+        >
+          Sign in
+        </button>
 
         <p
-          className="md:hidden text-3xl text-end"
+          className="md:hidden text-3xl "
           onClick={() => setShowMenu(!showMenu)}
         >
           {showMenu ? <span>&times;</span> : <span>&#8801;</span>}
         </p>
       </div>
-
-    {/* mood */}
-    <div className="">
-      <span></span>
-    </div>
 
       {/* Login button popup  */}
       <div
@@ -145,7 +153,7 @@ function Header() {
               <Link to={"/about"}>About</Link>
             </li>
             <li className="text-gray-600">
-              <Link to={'/project'}>Project</Link>
+              <Link to={"/project"}>Project</Link>
             </li>
             <li className="text-gray-600">
               <Link to={"/blog"}>Blog +</Link>
