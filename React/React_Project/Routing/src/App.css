@@ -1,0 +1,142 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    margin: auto;
+    height: 60px;
+    padding: 0 5px;
+}
+
+.header h2{
+    color: #ffffff;
+}
+.header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.header ul li {
+    list-style-type: none;
+    color: violet;
+}
+
+.activeNav {
+    color: yellowgreen;
+}
+.disableNav {
+    color: #ffffff;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin: auto;
+    height: 85vh;
+    border: 2px solid #ffffff;
+}
+.home h3{
+    color: #ffffff;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin: auto;
+    height: 85vh;
+    border: 2px solid #ffffff;
+}
+.about h3{
+    color: #ffffff;
+}
+.github{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 1200px;
+    margin: auto;
+    height: 85vh;
+    border: 2px solid #ffffff;
+    gap: 10px;
+}
+.github h3{
+    color: #ffffff;
+}
+.servicesDetail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin: auto;
+    height: 85vh;
+    border: 2px solid #ffffff;
+}
+.servicesDetail h3{
+    color: #ffffff;
+}
+
+.services{
+    width: 1200px;
+    margin: auto;
+    height: auto;
+}
+.services h3{
+    color: #ffffff;
+}
+.product{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card{
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+.card p{
+    color: #ffffff;
+    text-align: center;
+}
+
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin: auto;
+    height: 85vh;
+    border: 2px solid #ffffff;
+}
+.user h3{
+    color: #ffffff;
+}
+.simmer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin: auto;
+    height: 85vh;
+    border: 2px solid #ffffff;
+}
+.simmer h3{
+    color: #ffffff;
+}
+
+.footer{
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+    width: 1200px;
+    margin: auto;
+}
