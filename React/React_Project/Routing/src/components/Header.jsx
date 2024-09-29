@@ -1,10 +1,12 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import {Link, NavLink } from 'react-router-dom'
 
 function Header() {
   return (
     <div className="header">
-      <h2>Profile</h2>
+      <Link to={'/'} style={{textDecoration : 'none'}}>
+        <h2>Profile</h2>
+      </Link>
       <ul>
         <li className='list'>
           <NavLink to={'/'} className={({isActive}) => `${isActive ? 'activeNav' : 'disableNav'}`} style={{textDecoration : 'none'}}>
