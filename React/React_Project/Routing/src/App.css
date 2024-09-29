@@ -23,6 +23,10 @@
     color: violet;
 }
 
+.list:hover {
+    text-decoration: underline;
+}
+
 .activeNav {
     color: yellowgreen;
 }
@@ -77,6 +81,7 @@
     margin: auto;
     height: 85vh;
     border: 2px solid #ffffff;
+    padding: 0 200px;
 }
 .servicesDetail h3{
     color: #ffffff;

@@ -6,25 +6,25 @@ function Header() {
     <div className="header">
       <h2>Profile</h2>
       <ul>
-        <li>
+        <li className='list'>
           <NavLink to={'/'} className={({isActive}) => `${isActive ? 'activeNav' : 'disableNav'}`} style={{textDecoration : 'none'}}>
             Home
           </NavLink>
         </li> 
               
-        <li>
+        <li className='list'>
           <NavLink to={'/about'} className={({isActive}) => `${isActive ?'activeNav' : 'disableNav'}`} style={{textDecoration : 'none'}}>
             About
           </NavLink>
         </li> 
 
-        <li>
+        <li className='list'>
           <NavLink to={'/github'} className={({isActive}) => `${isActive ? 'activeNav' : 'disableNav'}`} style={{textDecoration : 'none'}}>
             Github
           </NavLink>
         </li>
 
-        <li>
+        <li className='list'>
           <NavLink to={'/services'} className={({isActive}) => `${isActive ? 'activeNav' : 'disableNav'}`} style={{textDecoration : 'none'}}>
             Services
           </NavLink>
