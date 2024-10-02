@@ -31,6 +31,30 @@ function Header() {
             Services
           </NavLink>
         </li>
+
+        <li className='list'>
+          <NavLink to={'/todo'} className={({isActive}) => `${isActive ? 'activeNav' : 'disableNav'}`} style={{textDecoration : 'none'}}>
+            Todo
+          </NavLink>
+        </li>
+
+        <li className='list'>
+          <NavLink to={'/ttt'} className={({isActive}) => `${isActive ? 'activeNav' : 'disableNav'}`} style={{textDecoration : 'none'}}>
+            Ttt
+          </NavLink>
+        </li>
+        
+        <li className='list'>
+          <NavLink to={'/api'} className={({isActive}) => `${isActive ? 'activeNav' : 'disableNav'}`} style={{textDecoration : 'none'}}>
+            UI
+          </NavLink>
+        </li>
+
+        <li className='list'>
+          <NavLink to={'/context'} className={({isActive}) => `${isActive ? 'activeNav' : 'disableNav'}`} style={{textDecoration : 'none'}}>
+            ContextApi
+          </NavLink>
+        </li>
         
       </ul>
     </div>

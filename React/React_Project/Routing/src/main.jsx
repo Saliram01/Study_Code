@@ -8,6 +8,11 @@ import About from "./components/About.jsx";
 import Github, { githubLoader } from "./components/Github.jsx";
 import Services, { loaderFunction } from "./components/Services.jsx";
 import ServicesDetail from "./components/ServicesDetail.jsx";
+import Todo from "./components/todo_list/Todo.jsx";
+import Board from "./components/tic_tac_toe/Board.jsx";
+import UIData from "./components/api/UIData.jsx";
+import {CounterProvider} from "./components/context/Counter.jsx";
+import ContexApi from "./components/contex_api/ContexApi.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -17,6 +22,10 @@ const router = createBrowserRouter(
       <Route loader={loaderFunction} path="services" element={<Services />} />
       <Route path="services/:id" element={<ServicesDetail />} />
       <Route loader={githubLoader} path="github" element={<Github />} />
+      <Route path="todo" element={<Todo/>} />
+      <Route path="ttt" element={<Board/>}/>
+      <Route path="api" element={<UIData/>}/>
+      <Route path="context" element={<CounterProvider> <ContexApi/> </CounterProvider>}/>
     </Route>
   )
 );
