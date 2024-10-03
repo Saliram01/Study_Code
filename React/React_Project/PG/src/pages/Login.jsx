@@ -14,7 +14,6 @@ function Form() {
 
   return (
     <>
-      <Header />
       <div className="w-full md:w-[80%] md:ml-[20%] mt-16 ">
         <div className="w-full flex flex-col justify-center items-center h-[80vh]">
           <h2 className="text-2xl font-bold py-4 text-fuchsia-700">Login Form</h2>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Header from "../Header";
-import { useParams } from "react-router-dom";
-import BlogDetailSimmer from "./BlogDetailSimmer";
+import { Link, useParams } from "react-router-dom";
+import BackArrow from "./BackArrow";
 
 function BlogDetail() {
   const [blgos, setBlogs] = useState({});
@@ -21,22 +21,21 @@ function BlogDetail() {
     })();
   }, [itemId]);
 
-  if(!blgos){return (<BlogDetailSimmer/>)}
-
   return (
     <div className="bg-white">
       <Header />
-      <div className="w-full h-screen lg:flex justify-center items-center p-4 lg:px-2 lg:py-8">
+     <Link to={'../blog'}> <BackArrow/> </Link>
+      <div className="w-full h-auto lg:flex justify-center items-center p-4 lg:px-2 lg:py-8">
         <div className="w-full lg:w-[50%] grid place-content-center place-items-center">
           <img
             className="w-[60%] md:w-[45%] md:mt-8 lg:w-[65%]"
             src={blgos.image}
           />
           <div className="flex-row text-center lg:flex justify-center items-center  my-8">
-            <button className="h-[48px] w-44 mb-4 cursor-pointer shadow-xl border text-green-400 rounded-full font-bold">
+            <button className="h-[42px] w-44 mb-4 cursor-pointer shadow-xl border text-green-400 rounded-full font-bold">
               ADD TO CART
             </button>
-            <button className="h-[48px] w-44 mb-4 mx-8 cursor-pointer bg-green-500 rounded-full text-white font-bold ">
+            <button className="h-[42px] w-44 mb-4 mx-8 cursor-pointer bg-green-500 rounded-full text-white font-bold ">
               BUY NOW
             </button>
           </div>

@@ -9,16 +9,15 @@ function BlogDetail() {
   let currentData = blgos.filter((v) => v.id == currentId)[0];
   return (
     <>
-      <Header />
       <div className="w-full md:w-[80%] md:ml-[20%] mt-16">
         <h2 className="text-center py-4 font-bold text-2xl">Blog_Detail</h2>
-        <p className="text-2xl font-bold shadow max-w-sm">
+        <div className="text-2xl font-bold shadow max-w-sm">
           <div className="text-center py-4">
           <p>id : {currentData.id}</p>
           <p>Title : {currentData.title}</p>
           <p>Body : {}currentData.Body</p>
           </div>
-        </p>
+        </div>
       </div>
     </>
   );

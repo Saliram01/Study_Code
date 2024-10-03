@@ -4,7 +4,6 @@ import Header from '../components/Header'
 function About() {
   return (
     <>  
-        <Header/>
         <div className="w-full md:w-[80%] md:ml-[20%] mt-16">
         <h2 className='text-center font-bold text-2xl p-4'>About</h2>
         </div>

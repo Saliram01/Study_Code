@@ -40,9 +40,9 @@ function Blog() {
               .filter((item) => {
                 return item.model.toLowerCase().includes(search);
               })
-              .map((v, i) => {
+              .map((v) => {
                 return (
-                  <Link to={`/blog/${v.id}`} key={i}>
+                  <Link to={`/blog/${v.id}`} key={v.id}>
                     <div className="w-64 h-80 p-4 shadow-xl mb-4 bg-white rounded-md cursor-pointer">
                       <div className="h-60">
                         <img className="" src={v.image} alt="" />

@@ -17,7 +17,6 @@ function Blog() {
   });
   return (
     <>
-      <Header />
       <div className="w-full md:w-[80%] md:ml-[20%] mt-16 shadow">
         <h2 className="text-center font-bold text-2xl p-4">Blog</h2>
         <div className="flex flex-wrap text-center justify-evenly">

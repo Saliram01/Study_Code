@@ -17,7 +17,7 @@ import ContexApi from "./components/contex_api/ContexApi.jsx";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
-      <Route path="" element={<Home />} />
+      <Route path="/" element={<Home />} />
       <Route path="about" element={<About />} />
       <Route loader={loaderFunction} path="services" element={<Services />} />
       <Route path="services/:id" element={<ServicesDetail />} />

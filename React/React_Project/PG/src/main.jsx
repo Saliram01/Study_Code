@@ -12,49 +12,58 @@ import Login from "./pages/Login";
 import Background_Changer from "./list_p/Background_Changer";
 import AboutMe from './pages/AboutMe';
 import UserForm from "./list_p/UserForm";
+import App from "./App";
 
-let router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "about",
-    element: <About />,
-  },
-  {
-    path: "services",
-    element: <Services />,
-  },
-  {
-    path: "blog",
-    element: <Blog />,
-  },
-  {
-    path: "blog/:id", 
-    element: <BlogDetail />,
-  },
-  {
-    path : '*',
-    element : <Error404/>
-  },
-  {
-    path : 'login',
-    element : <Login/>
-  },
-  {
-    path : 'background',
-    element : <Background_Changer/> 
-  },
-  {
-    path : 'form',
-    element : <UserForm/>
-  },
-  {
-    path : 'aboutme',
-    element : <AboutMe/>
-  }
-]);
+let router = createBrowserRouter(
+    [
+      {
+        path : '/',
+        element : <App/>,
+        children : [
+          {
+            path : '/',
+            element : <Home/>
+          },
+          {
+            path : 'about',
+            element : <About/>
+          },
+          {
+            path: "services",
+            element: <Services />,
+          },
+          {
+            path: "blog",
+            element: <Blog />,
+          },
+          {
+            path: "blog/:id", 
+            element: <BlogDetail />,
+          },
+          {
+            path : '*',
+            element : <Error404/>
+          },
+          {
+            path : 'login',
+            element : <Login/>
+          },
+          {
+            path : 'background',
+            element : <Background_Changer/> 
+          },
+          {
+            path : 'form',
+            element : <UserForm/>
+          },
+          {
+            path : 'aboutme',
+            element : <AboutMe/>
+          }
+        ]
+      }
+    ]
+)
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

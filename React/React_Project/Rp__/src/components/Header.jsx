@@ -19,7 +19,7 @@ function Header() {
 
   return (
     // Navbar
-    <div className="w-full shadow sticky top-0 bg-white">
+    <div className="w-full shadow bg-white">
       <div className="max-w-[1325px] mx-auto h-16 px-4 flex justify-between  items-center text-[#443169]">
         <Link to={"/"}>
           <h1 className="font-bold text-xl md:w-[10%]">Portfolio</h1>
@@ -71,12 +71,12 @@ function Header() {
       {/* Login button popup  */}
       <div
         onClick={() => setSignIn(false)}
-        className={`fixed w-full top-0 h-screen z-10 bg-[rgba(0,0,0,0.2)] backdrop-blur-xl ${
+        className={`fixed w-full top-0 h-screen z-50 bg-[rgba(0,0,0,0.2)] backdrop-blur-xl ${
           signIn ? "scale-100" : "scale-0"
         }`}
       ></div>
       <div
-        className={`fixed w-[350px] z-10 shadow-white h-[400px] inset-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-md hidden sm:block ${
+        className={`fixed w-[350px] z-50 shadow-white h-[400px] inset-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-md hidden sm:block ${
           signIn ? "scale-100" : "scale-0"
         } border-2`}
       >

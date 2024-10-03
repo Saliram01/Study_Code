@@ -24,7 +24,7 @@ function Home() {
           </div>
           <div className="grid place-content-center md:order-2 py-14">
             <img
-              className="w-60 md:w-[280px] rotate-6 hover:rotate-0 transition-all lg:w-[330px] border-8 border-b-green-400 rounded-3xl -z-50"
+              className="w-60 md:w-[280px] rotate-6 hover:rotate-0 transition-all lg:w-[330px] border-8 border-b-green-400 rounded-3xl"
               src={pic}
               alt="image"
             />

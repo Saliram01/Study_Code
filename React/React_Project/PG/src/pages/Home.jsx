@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <>
-      <Header />
       <div className="w-full md:w-[80%] md:ml-[20%] mt-16 shadow">
         <div className="grid sm:grid-cols-2 place-content-center  h-[91vh] md:p-2">
           <div className="grid place-content-center order-2 sm:order-1 mt-8">

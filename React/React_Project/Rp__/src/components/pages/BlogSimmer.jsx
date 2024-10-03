@@ -16,9 +16,9 @@ function BlogSimmer() {
       </div>
       
       <div className="max-w-[1320px] mx-auto flex flex-wrap text-center justify-evenly mt-16">
-        {Array.from({ length: 50 }).map((el) => {
+        {Array.from({ length: 50 }).map((el,i) => {
           return (
-            <div className="w-64 h-80 p-4 shadow-xl mb-4 bg-white rounded-md cursor-pointer">
+            <div key={i} className="w-64 h-80 p-4 shadow-xl mb-4 bg-white rounded-md cursor-pointer">
               <div className="h-60">
                 <img className="" alt="" />
               </div>
