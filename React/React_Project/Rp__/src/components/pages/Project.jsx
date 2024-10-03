@@ -1,12 +1,10 @@
 import React from 'react'
-import Header from '../Header'
 import { Link } from 'react-router-dom'
 
 function Project() {
   return (
-    <section className='w-full h-screen'>
-        <Header/>
-        <div className="max-w-screen mx-auto h-[712px] bg-gradient-to-t to-white from-purple-900">
+    <section className='w-full'>
+        <div className="max-w-screen mx-auto h-[510px]">
             <h1 className='w-full font-serif text-center py-12 text-4xl font-semibold text-green-700 underline'>My Project Lists</h1>
             <div className="max-w-[1320px] mx-auto flex justify-center items-center flex-wrap gap-5 py-8 px-4">
 

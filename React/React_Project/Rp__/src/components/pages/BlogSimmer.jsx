@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../Header";
 import CardSearchBar from "./CardSearchBar";
 import CardSelectMenu from "./CardSelectMenu";
 
@@ -7,7 +6,6 @@ function BlogSimmer() {
   //  new Array(10).fill(1).map((el) => {}) // creating multiple element
   return (
     <>
-      <Header />
       <div className="max-w-[1320px] mx-auto">
         <div className="flex justify-between items-center my-12 px-2">
           <CardSearchBar />

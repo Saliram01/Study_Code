@@ -1,10 +1,8 @@
 import React from 'react'
-import Header from '../Header'
 
 function Contact() {
   return (
-  <div className='w-full bg-white'>
-       <Header/>
+  <div className='w-full'>
        <div className="max-w-full mx-auto">
        <section className="">
   <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">

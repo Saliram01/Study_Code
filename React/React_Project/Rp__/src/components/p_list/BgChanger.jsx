@@ -1,13 +1,15 @@
 import React, { useState } from "react";
-import Header from "../Header";
+import BackArrow from '../pages/BackArrow'
+import {Link} from 'react-router-dom'
 
 function BgChanger() {
-  const [color, setColor] = useState("gray");
+  const [color, setColor] = useState("slate");
+
   return (
-    <div className="bg-white w-full h-screen">
-      <Header />
+    <div className="w-full">
+      <Link to={'../project'}><BackArrow/></Link>
       <div
-        className="max-w-full h-[710px] bg-slate-300 flex justify-center items-center"
+        className="max-w-full h-screen flex justify-center items-center"
         style={{ backgroundColor: color }}
       >
         <div className="w-[400px] flex flex-col gap-5 px-24">

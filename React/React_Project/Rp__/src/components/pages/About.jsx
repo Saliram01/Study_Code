@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Header from '../Header'
 
 function About() {
   // useState
@@ -24,10 +23,8 @@ useEffect(() => {
   },1000)
 },[])
   return (
-    <div className="w-full h-screen bg-white">
-      <Header/>
+    <div className="w-full h-screen">
       <div className='px-24 py-8'>
-        {/* useState */}
         <h1>My {update.brand}</h1>
         <h2 className='mb-4'>It is a {update.color} {update.model} from {update.year}</h2>
         <button onClick={Change} className='py-1 px-4 rounded-full bg-purple-900 text-white active:bg-purple-600'>Click Me</button>

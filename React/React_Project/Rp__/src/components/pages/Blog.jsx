@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Header from "../Header";
 import { Link } from "react-router-dom";
 import CardSearchBar from "./CardSearchBar";
 import CardSelectMenu from "./CardSelectMenu";
@@ -25,7 +24,6 @@ function Blog() {
 
   return (
     <div className="bg-white">
-      <Header />
       <div className="w-full ">
         <div className="max-w-[1320px] mx-auto">
           <div className="flex justify-between items-center my-12 px-2">
