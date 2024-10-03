@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Header from "../head/Header";
+import Header from "../Header";
 import { useParams } from "react-router-dom";
 import BlogDetailSimmer from "./BlogDetailSimmer";
 

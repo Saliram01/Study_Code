@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../head/Header'
+import Header from '../Header'
 function Error404() {
   return (
     <div className=''>

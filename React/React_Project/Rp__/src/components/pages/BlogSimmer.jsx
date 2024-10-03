@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../head/Header";
+import Header from "../Header";
 import CardSearchBar from "./CardSearchBar";
 import CardSelectMenu from "./CardSelectMenu";
 

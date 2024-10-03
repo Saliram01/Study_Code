@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Header from '../head/Header'
+import Header from '../Header'
 
 function SignUpForm() {
     const [name ,setName] = useState('');

@@ -19,7 +19,7 @@ function Header() {
 
   return (
     // Navbar
-    <div className="w-full shadow">
+    <div className="w-full shadow sticky top-0 bg-white">
       <div className="max-w-[1325px] mx-auto h-16 px-4 flex justify-between  items-center text-[#443169]">
         <Link to={"/"}>
           <h1 className="font-bold text-xl md:w-[10%]">Portfolio</h1>

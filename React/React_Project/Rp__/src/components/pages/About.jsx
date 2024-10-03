@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Header from '../head/Header'
+import Header from '../Header'
 
 function About() {
   // useState

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Header from "../head/Header";
+import Header from "../Header";
 import { Link } from "react-router-dom";
 import CardSearchBar from "./CardSearchBar";
 import CardSelectMenu from "./CardSelectMenu";
