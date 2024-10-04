@@ -12,7 +12,12 @@ import BgChanger from "./components/p_list/BgChanger";
 import EnqueryForm from './components/p_list/EnqueryForm'
 import Error404 from "./components/pages/Error404";
 import SignUpForm from "./components/p_list/SignUpForm";
+import TTT from './components/p_list/TTT'
 import Project from "./components/pages/Project";
+import UseState from "./components/hooks/UseState";
+import UseEffect from "./components/hooks/UseEffect";
+import Context  from "./components/hooks/Context";
+import UseRef from "./components/hooks/UseRef";
 
 const router = createBrowserRouter([
   {
@@ -48,6 +53,22 @@ const router = createBrowserRouter([
         element : <BlogDetail/>
       },
       {
+        path : 'useEffect',
+        element : <UseEffect/>
+      },
+      {
+        path : 'context',
+        element : <Context/>
+      },
+      {
+        path : 'useRef',
+        element : <UseRef/>
+      },
+      {
+        path : 'useState',
+        element : <UseState/>
+      },
+      {
         path : 'bgchanger',
         element : <BgChanger/>
       },
@@ -58,6 +79,10 @@ const router = createBrowserRouter([
       {
         path : 'sign-up',
         element : <SignUpForm/>
+      },
+      {
+        path : 'ttt',
+        element : <TTT/>
       }
     ]
   }

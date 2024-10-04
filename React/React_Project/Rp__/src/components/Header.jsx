@@ -19,7 +19,7 @@ function Header() {
 
   return (
     // Navbar
-    <div className="w-full shadow">
+    <div className="max-w-full shadow">
       <div className="max-w-[1325px] mx-auto h-16 px-4 flex justify-between  items-center text-[#443169]">
         <Link to={"/"}>
           <h1 className="font-bold text-xl md:w-[10%]">Portfolio</h1>
@@ -37,7 +37,7 @@ function Header() {
           <Link to={"/blog"}>
             <li className="hover:text-green-600 ">Blog +</li>
           </Link>
-          <Link to={"/contact"}>
+          <Link to={"/contact"} className="hidden lg:block">
             <li className="hover:text-green-600 ">Contact</li>
           </Link>
         </ul>
