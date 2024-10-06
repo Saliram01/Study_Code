@@ -1,6 +1,6 @@
 import React, { createContext, useState } from 'react'
 
-const CounterContex = createContext(null);
+export const CounterContex = createContext(null);
 
 function CounterProvider(props) {
     const [count , setCount] = useState(0);
@@ -12,4 +12,29 @@ function CounterProvider(props) {
     )
 }
 
-export {CounterProvider, CounterContex};
+export default CounterProvider;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,14 +1,16 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import BackArrow from '../pages/BackArrow'
+import React from "react";
+import BackArrow from "../pages/BackArrow";
+import { Link } from "react-router-dom";
 
-function UseContext() {
+function Context() {
   return (
-    <div className='h-[65vh] text-center'>
+    <div className="flex flex-col justify-center items-center h-[65vh]">
       <Link to={'../project'}><BackArrow/></Link>
-      <h2>UseContext</h2>
+      <h1 className="font-bold text-2xl text-gray-400">useContext</h1>
+      <p>useContext is a react hook that allows you access data from any components without explicit passing it down through props at every level.</p>
     </div>
-  )
+    
+  );
 }
 
-export default UseContext
+export default Context;

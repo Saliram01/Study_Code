@@ -16,8 +16,9 @@ import TTT from './components/p_list/TTT'
 import Project from "./components/pages/Project";
 import UseState from "./components/hooks/UseState";
 import UseEffect from "./components/hooks/UseEffect";
-import Context  from "./components/hooks/Context";
+import Context from "./components/hooks/Context";
 import UseRef from "./components/hooks/UseRef";
+import UseMemo from "./components/hooks/UseMemo";
 
 const router = createBrowserRouter([
   {
@@ -53,11 +54,15 @@ const router = createBrowserRouter([
         element : <BlogDetail/>
       },
       {
+        path : 'useState',
+        element : <UseState/>
+      },
+      {
         path : 'useEffect',
         element : <UseEffect/>
       },
       {
-        path : 'context',
+        path : 'useContext',
         element : <Context/>
       },
       {
@@ -65,8 +70,8 @@ const router = createBrowserRouter([
         element : <UseRef/>
       },
       {
-        path : 'useState',
-        element : <UseState/>
+        path : 'useMemo',
+        element : <UseMemo/>
       },
       {
         path : 'bgchanger',

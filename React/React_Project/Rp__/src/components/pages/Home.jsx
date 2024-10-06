@@ -5,8 +5,8 @@ import Button from "./Button";
 function Home() {
   return (
     <>
-      <div className="w-full min-h-screen ">
-        <div className="w-full h-screen grid md:grid-cols-2 px-4 md:px-8 xl:px-32">
+      <div className="max-w-full h-[92vh]">
+        <div className="w-full h-full grid md:grid-cols-2 px-4 md:px-8 xl:px-32">
           <div className="grid place-content-center sm:px-34 space-y-3 lg:gap-4 xs:order-2 order-1 py-3 md:py-0 text-center md:text-start">
             <h1 className="text-xl md:text-3xl font-bold text-[#2A1454]">Hello I'm</h1>
             <h2 className="text-xl md:text-3xl lg:text-5xl font-bold text-[#4F2C96]">
@@ -18,7 +18,7 @@ function Home() {
               Iure corrupti iusto ea, ut nulla amet.
             </p>
             <div>
-              <Button />
+              <Button title="Download Resume"/>
             </div>
           </div>
           <div className="grid place-content-center md:order-2 py-14">

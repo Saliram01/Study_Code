@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Header() {
   const [showMenu, setShowMenu] = useState(false);
@@ -19,29 +19,16 @@ function Header() {
 
   return (
     // Navbar
-    <div className="max-w-full shadow">
+    <div className="max-w-full shadow sticky top-0 z-10 bg-white">
       <div className="max-w-[1325px] mx-auto h-16 px-4 flex justify-between  items-center text-[#443169]">
-        <Link to={"/"}>
-          <h1 className="font-bold text-xl md:w-[10%]">Portfolio</h1>
-        </Link>
-        <ul className="hidden md:grid grid-flow-col place-content-center content-center gap-12 cursor-pointer font-bold md:w-[70%]">
-          <Link to={"/"}>
-            <li className="hover:text-green-600 ">Home</li>
-          </Link>
-          <Link to={"/about"}>
-            <li className="hover:text-green-600 ">About</li>
-          </Link>
-          <Link to={"/project"} onClick={() => setShowProject(!showProject)}>
-            <li className="hover:text-green-600 ">Project</li>
-          </Link>
-          <Link to={"/blog"}>
-            <li className="hover:text-green-600 ">Blog +</li>
-          </Link>
-          <Link to={"/contact"} className="hidden lg:block">
-            <li className="hover:text-green-600 ">Contact</li>
-          </Link>
-        </ul>
-
+        <NavLink to={"/"}><h1 className="font-bold text-xl md:w-[10%]">Portfolio</h1></NavLink>
+        <nav className="hidden md:grid grid-flow-col place-content-center content-center gap-12 cursor-pointer font-bold md:w-[70%]">
+          <NavLink className={({isActive}) => `${isActive ? 'text-green-500' : ''}`} to={"/"}>Home</NavLink>
+          <NavLink className={({isActive}) => `${isActive ? 'text-green-500' : ''}`} to={"/about"}>About</NavLink>
+          <NavLink className={({isActive}) => `${isActive ? 'text-green-500' : ''}`} to={"/project"}>Project</NavLink>
+          <NavLink className={({isActive}) => `${isActive ? 'text-green-500' : ''}`} to={"/blog"}>Blog +</NavLink>
+          <NavLink className={({isActive}) => `${isActive ? 'text-green-500' : ''}`} to={"/contact"}>Contact</NavLink>
+        </nav>
         {/* mood */}
         <div className="flex justify-center sm:justify-end md:justify-center items-center rounded-full cursor-pointer w-[75%] md:w-8 pt-2">
           <span onClick={() => setMood(!mood)}>
