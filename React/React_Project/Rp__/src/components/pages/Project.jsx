@@ -23,6 +23,7 @@ function Project() {
             <Link to={'/enquery'}><ProjectList value='EnqueryForm'/></Link>
             <Link to={'/sign-up'}><ProjectList value='SignUpForm'/></Link>
             <Link to={'/ttt'}><ProjectList value='Tic Tac Toe'/></Link>
+            <Link to={'/meme'}><ProjectList value='Meme Generator'/></Link>
             </div>
         </div>
     </section>

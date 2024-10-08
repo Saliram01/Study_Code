@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TodoApp</title>
+</head>
+<body class="bg-slate-600">
+    <section class="border-2 w-[400px] m-auto mt-20">
+        <h1 class="py-8 text-center text-white font-bold text-2xl">To-Do List</h1>
+        <div class="text-center w-[265px] h-[40px] m-auto rounded-full flex items-center justify-center mb-8">
+        <input id="display" class="outline-0 text-white px-4 rounded-l-full border-2 border-r-0 h-full bg-transparent" type="text" required placeholder="Add your task">
+        <button onclick="Add()" class="text-white h-[40px] px-3 border-2  rounded-r-full">ADD</button>
+        </div>
+        <ul class="text-white flex flex-col w-[265px] m-auto mb-8">
+            <div id="list"></div>
+        </ul>
+    </section>
+    <script>
+            const display = document.querySelector('#display');
+            const list = document.querySelector('#list');
+
+            function Add(){
+                if(display.value === ''){
+                    alert('You must write something');
+                }
+                else{
+                    let li = document.createElement('li');
+                    li.innerText = display.value;
+                    list.appendChild(li)
+
+                    let check = document.createElement('input');
+                    check.setAttribute('type','checkbox');
+                    li.prepend(check)
+                    
+                    check.style.marginRight = '6px';
+                    let span = document.createElement('span');
+                    span.innerText = '\u00d7';
+                    li.appendChild(span);
+                    span.style.position = 'fixed';
+                    span.style.right = '42%';
+                    span.style.cursor = 'pointer';
+                }
+                display.value = '';
+                CheckData()
+                SaveData();
+            }
+
+            list.addEventListener("click", (e) => {
+                // if(e.target.tagName === 'LI'){
+                //     e.target.classList.toogle('checked');
+                // }
+                if(e.target.tagName === 'SPAN'){
+                    e.target.parentElement.remove();
+                    SaveData();
+                }
+            },false)
+
+            function SaveData(){
+                localStorage.setItem("data",list.innerHTML);
+            }
+
+            function ShowTask(){
+                list.innerHTML = localStorage.getItem('data');
+            }
+            ShowTask();
+            
+    </script>
+</body>
+</html>

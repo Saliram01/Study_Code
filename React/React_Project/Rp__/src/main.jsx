@@ -19,6 +19,8 @@ import UseEffect from "./components/hooks/UseEffect";
 import Context from "./components/hooks/Context";
 import UseRef from "./components/hooks/UseRef";
 import UseMemo from "./components/hooks/UseMemo";
+import { Meme } from "./components/p_list/Meme";
+import MemeDetail from "./components/p_list/MemeDetail";
 
 const router = createBrowserRouter([
   {
@@ -88,7 +90,15 @@ const router = createBrowserRouter([
       {
         path : 'ttt',
         element : <TTT/>
-      }
+      },
+      {
+        path : 'meme',
+        element : <Meme/>
+      },
+      {
+        path : 'meme/:id',
+        element : <MemeDetail/>
+      },
     ]
   }
 ]);

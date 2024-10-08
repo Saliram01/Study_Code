@@ -43,16 +43,10 @@ function Header() {
             Ttt
           </NavLink>
         </li>
-        
-        <li className='list'>
-          <NavLink to={'/api'} className={({isActive}) => `${isActive ? 'activeNav' : 'disableNav'}`} style={{textDecoration : 'none'}}>
-            UI
-          </NavLink>
-        </li>
 
         <li className='list'>
-          <NavLink to={'/context'} className={({isActive}) => `${isActive ? 'activeNav' : 'disableNav'}`} style={{textDecoration : 'none'}}>
-            ContextApi
+          <NavLink to={'/state'} className={({isActive}) => `${isActive ? 'activeNav' : 'disableNav'}`} style={{textDecoration : 'none'}}>
+           State
           </NavLink>
         </li>
         
