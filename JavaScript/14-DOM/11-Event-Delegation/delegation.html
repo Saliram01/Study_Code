@@ -28,18 +28,15 @@
     </style>
 </head>
 <body>
-    
+    <h1>This method is not good for event deligation</h1>
 </body>
     <script>
-        const parent = document.querySelector("body");
-        count = 1;
         for(let i = 1; i <= 100; i++){
             const child = document.createElement("div");
-            child.innerText = count++
-            parent.append(child);
+            child.innerText = i
+            document.querySelector("body").appendChild(child);
 
-            child.addEventListener('click', (e) => {
-                // console.log(e);
+            child.addEventListener('click', () => {
                 child.remove();
             })
         }
