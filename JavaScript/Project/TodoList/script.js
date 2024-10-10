@@ -1,5 +1,5 @@
 let display = document.querySelector('#display');
-let list = document.querySelector('#list-container');
+let ul = document.querySelector('#list-container');
 
 function Add(){
     if(display.value === ''){
@@ -8,7 +8,7 @@ function Add(){
     else{
         let li = document.createElement('li');
         li.innerText = display.value;
-        list.appendChild(li);
+        ul.appendChild(li);
 
         let close = document.createElement('span');
         close.innerText = '\u00d7';
@@ -20,11 +20,13 @@ function Add(){
         display.focus();
     }
     display.value = '';
+    SaveData()
 }
 
-list.addEventListener('click',(e) => {
+ul.addEventListener('click',(e) => {
     if(e.target.tagName === 'SPAN'){
         e.target.parentElement.remove();
+        SaveData();
     }
 
     else if(e.target.tagName === 'LI'){
@@ -35,6 +37,15 @@ list.addEventListener('click',(e) => {
         e.target.classList.toggle('bg')
     }
 })
+
+function SaveData(){
+    localStorage.setItem('data', ul.innerHTML);
+}
+
+function ShowData(){
+    ul.innerHTML = localStorage.getItem('data');
+}
+ShowData()
 
 
 
