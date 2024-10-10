@@ -31,10 +31,12 @@ ul.addEventListener('click',(e) => {
 
     else if(e.target.tagName === 'LI'){
         e.target.classList.toggle('checked')
+        SaveData();
     }
 
     else if(e.target.tagName === 'P'){
         e.target.classList.toggle('bg')
+        SaveData();
     }
 })
 
