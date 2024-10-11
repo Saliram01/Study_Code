@@ -23,17 +23,17 @@ function BlogDetail() {
   return (
     <div className="bg-white">
      <Link to={'../blog'}> <BackArrow/> </Link>
-      <div className="w-full h-auto lg:flex justify-center items-center p-4 lg:px-2 lg:py-8">
+      <div className="w-full h-screen lg:flex justify-center items-center p-4 lg:px-2 lg:py-8">
         <div className="w-full lg:w-[50%] grid place-content-center place-items-center">
           <img
             className="w-[60%] md:w-[45%] md:mt-8 lg:w-[65%]"
             src={blgos.image}
           />
           <div className="flex-row text-center lg:flex justify-center items-center  my-8">
-            <button className="h-[42px] w-44 mb-4 cursor-pointer shadow-xl border text-green-400 rounded-full font-bold">
+            <button className="h-[42px] w-44 mb-4 cursor-pointer shadow-xl border text-green-400 rounded-full font-bold hover:bg-green-500 hover:text-white active:bg-green-300">
               ADD TO CART
             </button>
-            <button className="h-[42px] w-44 mb-4 mx-8 cursor-pointer bg-green-500 rounded-full text-white font-bold ">
+            <button className="h-[42px] w-44 mb-4 mx-8 cursor-pointer bg-green-500 rounded-full text-white font-bold shadow-xl hover:border-2 hover:bg-white hover:text-gray-500">
               BUY NOW
             </button>
           </div>
