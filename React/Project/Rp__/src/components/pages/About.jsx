@@ -1,4 +1,6 @@
 import React from 'react'
+import AboutSkill from './AboutSkill';
+import {Link} from 'react-router-dom';
 
 function About() {
   return (
@@ -9,16 +11,16 @@ function About() {
                   <h1 className='text-2xl font-bold text-gray-400 mb-6'>ABOUT ME</h1>
                   <p>I help business owners and busy web developers to design & develop creative websites that fits their vision and attracts the visitors to stay for ever. Technologies and tools that I use to create such awesome websites.</p>
                   <ul className='flex gap-4 flex-wrap mt-8'>
-                    <li className='px-6 py-1 border-2 rounded-full cursor-pointer'>#JavaScript</li>
-                    <li className='px-6 py-1 border-2 rounded-full cursor-pointer'>#React</li>
-                    <li className='px-6 py-1 border-2 rounded-full cursor-pointer'>#Html</li>
-                    <li className='px-6 py-1 border-2 rounded-full cursor-pointer'>#CSS</li>
-                    <li className='px-6 py-1 border-2 rounded-full cursor-pointer'>#Next.js</li>
-                    <li className='px-6 py-1 border-2 rounded-full cursor-pointer'>#Java</li>
-                    <li className='px-6 py-1 border-2 rounded-full cursor-pointer'>#Spring Boot</li>
-                    <li className='px-6 py-1 border-2 rounded-full cursor-pointer'>#Bootstrap</li>
-                    <li className='px-6 py-1 border-2 rounded-full cursor-pointer'>#Tailwind</li>
-                    <li className='px-6 py-1 border-2 rounded-full cursor-pointer'>#Figma</li>
+                    <AboutSkill title="#JavaScript"/>
+                    <AboutSkill title="#React"/>
+                    <AboutSkill title="#Html"/>
+                    <AboutSkill title="#CSS"/>
+                    <AboutSkill title="#Next.js"/>
+                    <AboutSkill title="#Java"/>
+                    <AboutSkill title="#Spring Boot"/>
+                    <AboutSkill title="#Bootstrap"/>
+                    <AboutSkill title="#Tailwind"/>
+                    <AboutSkill title="#Figma"/>
                   </ul>
                 </div>
                 <div className="my-12 px-8">
