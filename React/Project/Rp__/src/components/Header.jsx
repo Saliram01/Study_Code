@@ -131,8 +131,8 @@ function Header() {
           showMenu ? "left-[0]" : ""
         }`}
       >
-        <div className="w-full px-4 h-[710px] py-4 text-md font-bold bg-white mt-1">
-          <ul className="space-y-4">
+        <div className={`w-full px-4 h-[710px] py-4 text-md font-bold bg-white ${showMenu ? 'bg-slate-100' : ''}`}>
+          <ul className="space-y-4 ">
             <li className="text-gray-600">
               <Link to={"/"}>Home</Link>
             </li>

@@ -1,15 +1,17 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import BackArrow from '../pages/BackArrow'
 import { Link } from 'react-router-dom'
 
+
 function UseRef() {
+
   const [count , setCount] = useState(0); // count ++
   const reff = useRef(0) //count ++
 
   const ref = useRef(); // input fiels
 
   function f(){
-    console.log(ref);
+    console.log(ref); // print element
     console.log(ref.current); // input fiels
     setCount(count => count + 1) // count ++
   }

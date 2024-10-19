@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import AboutSkill from './AboutSkill';
-import {Link} from 'react-router-dom';
 
 function About() {
   return (
