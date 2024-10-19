@@ -21,7 +21,6 @@ import UseRef from "./components/hooks/UseRef";
 import UseMemo from "./components/hooks/UseMemo";
 import { Meme } from "./components/p_list/Meme";
 import MemeDetail from "./components/p_list/MemeDetail";
-import Html from "./components/skill/Html/Html";
 
 const router = createBrowserRouter([
   {
