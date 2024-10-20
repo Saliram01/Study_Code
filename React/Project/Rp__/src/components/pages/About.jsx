@@ -35,7 +35,7 @@ function About() {
                 </div>
             </div>
             <div className="w-[50%] h-full flex justify-center items-center">
-              <img src="https://anuragsinghbam.netlify.app/images/coder.svg"/>
+              <img src="https://anuragsinghbam.netlify.app/images/coder.svg" alt='coding'/>
             </div>
         </div>
     </div>

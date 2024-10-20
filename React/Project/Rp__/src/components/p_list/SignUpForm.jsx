@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import BackArrow from '../pages/BackArrow'
-import {Link} from 'react-router-dom'
 
 function SignUpForm() {
     const [name ,setName] = useState('');
@@ -16,7 +14,6 @@ function SignUpForm() {
 
   return (
     <div className='w-full'>
-        <Link to={'../project'}><BackArrow/></Link>
         <div className="flex flex-col justify-center items-center w-full h-screen">
             <form action="#" onSubmit={CallMe} className='w-[320px] shadow-md px-4 py-6 border-2 border-white hover:border-blue-100 rounded-md'>
                 <h1 className='text-center pb-6 font-semibold font-mono text-2xl'>sign up</h1>

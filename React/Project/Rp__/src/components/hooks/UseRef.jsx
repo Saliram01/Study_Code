@@ -1,7 +1,4 @@
 import React, { useContext, useEffect, useRef, useState } from 'react'
-import BackArrow from '../pages/BackArrow'
-import { Link } from 'react-router-dom'
-
 
 function UseRef() {
 
@@ -23,10 +20,9 @@ function UseRef() {
   return (
     <div className='text-center flex justify-center items-center flex-col py-24'>
       <p>
-        useRef is a react hook that allows us to create mutable variables, which will not re-render the components.It is also used for accessing the DOM elements.
+        <span className='text-orange-300 text-2xl font-bold'>useRef</span> is a react hook that allows us to create mutable variables, which will not re-render the components.It is also used for accessing the DOM elements.
       </p>
       {/* input field print  */}
-        <Link to={'../project'}><BackArrow/></Link>
         <div className="flex flex-col gap-4 justify-center items-center">
             <input type="text" className='border-2 px-4 py-1 w-60 outline-purple-400 rounded-full' ref={ref}/>
             <button onClick={f} className='border-2 py-1 w-24 rounded-full'>Click Here</button>

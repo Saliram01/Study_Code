@@ -9,18 +9,22 @@ import Blog from "./components/pages/Blog";
 import Contact from "./components/pages/Contact";
 import BlogDetail from "./components/pages/BlogDetail";
 import BgChanger from "./components/p_list/BgChanger";
-import EnqueryForm from './components/p_list/EnqueryForm'
+import EnqueryForm from './components/p_list/EnqueryForm';
 import Error404 from "./components/pages/Error404";
 import SignUpForm from "./components/p_list/SignUpForm";
-import TTT from './components/p_list/TTT'
+import TTT from './components/p_list/TTT';
 import Project from "./components/pages/Project";
 import UseState from "./components/hooks/UseState";
 import UseEffect from "./components/hooks/UseEffect";
 import Context from "./components/hooks/Context";
 import UseRef from "./components/hooks/UseRef";
 import UseMemo from "./components/hooks/UseMemo";
+import UseCallback from './components/hooks/useCallback/UseCallback';
+import UseReducer from "./components/hooks/UseReducer";
 import { Meme } from "./components/p_list/Meme";
 import MemeDetail from "./components/p_list/MemeDetail";
+import UseLayoutEffect from "./components/hooks/UseLayoutEffect";
+import UseLocalStorage from "./components/hooks/cHook/UseLocalStorage";
 
 const router = createBrowserRouter([
   {
@@ -74,6 +78,22 @@ const router = createBrowserRouter([
       {
         path : 'useMemo',
         element : <UseMemo/>
+      },
+      {
+        path : 'useCallback',
+        element : <UseCallback/>
+      },
+      {
+        path : 'useReducer',
+        element : <UseReducer/>
+      },
+      {
+        path : 'useLayoutEffect',
+        element : <UseLayoutEffect/>
+      },
+      {
+        path : 'customHook',
+        element : <UseLocalStorage/>
       },
       {
         path : 'bgchanger',

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import CardSearchBar from "./CardSearchBar";
 import CardSelectMenu from "./CardSelectMenu";
@@ -10,7 +10,7 @@ function Blog() {
 
   const [data, setApiData] = useState([]);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     fetch("https://fakestoreapi.in/api/products")
       .then((res) => res.json())
       .then((data) => {
@@ -30,7 +30,7 @@ function Blog() {
             <CardSearchBar fun1={setSearch} />
             <CardSelectMenu f2={setSelect} />
           </div>
-          <div className="flex flex-wrap text-center justify-evenly">
+          <div className=" flex flex-wrap items-center justify-center gap-2">
             {data
               .filter((sel) => {
                 return sel.brand.includes(select);

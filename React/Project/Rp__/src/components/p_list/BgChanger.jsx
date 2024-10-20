@@ -1,13 +1,10 @@
 import React, { useState } from "react";
-import BackArrow from '../pages/BackArrow'
-import {Link} from 'react-router-dom'
 
 function BgChanger() {
   const [color, setColor] = useState("slate");
 
   return (
     <div className="w-full">
-      <Link to={'../project'}><BackArrow/></Link>
       <div
         className="max-w-full h-screen flex justify-center items-center"
         style={{ backgroundColor: color }}

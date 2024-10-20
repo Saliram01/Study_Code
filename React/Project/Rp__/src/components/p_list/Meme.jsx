@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
 import {NavLink} from 'react-router-dom'
 import {useState , useEffect} from 'react'
 
 export function Meme(){
     const [memeData , setMeme] = useState([])
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         fetch('https://api.imgflip.com/get_memes')
         .then((res) => res.json())
         .then((memesData) => {

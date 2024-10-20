@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
-import BackArrow from "./BackArrow";
+import React, { useState, useLayoutEffect } from "react";
+import { useParams } from "react-router-dom";
 
 function BlogDetail() {
   const [blgos, setBlogs] = useState({});
@@ -8,7 +7,7 @@ function BlogDetail() {
   const param = useParams();
   const itemId = Number(param.id);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     (async () => {
       const res = await fetch("https://fakestoreapi.in/api/products");
       const data = await res.json();
@@ -22,7 +21,6 @@ function BlogDetail() {
 
   return (
     <div className="bg-white">
-     <Link to={'../blog'}> <BackArrow/> </Link>
       <div className="w-full h-screen lg:flex justify-center items-center p-4 lg:px-2 lg:py-8">
         <div className="w-full lg:w-[50%] grid place-content-center place-items-center">
           <img

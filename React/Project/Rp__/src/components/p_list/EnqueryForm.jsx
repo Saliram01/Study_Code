@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import BackArrow from '../pages/BackArrow'
-import {Link} from 'react-router-dom'
 
 function EnqueryForm() {
   const [userData ,setUserData] = useState({
@@ -31,7 +29,6 @@ function EnqueryForm() {
 
   return (
     <div>
-      <Link to={'../project'}><BackArrow/></Link>
         <div className="w-full h-screen md:flex md:flex-col justify-center items-center">
         <h2 className='text-center font-bold pb-2 my-8 md:my-0 text-2xl underline'>Enquery Now</h2> 
           <form onSubmit={handleSubmit} className='max-w-xs border-2 border-white hover:border-gray-200 sm:max-w-sm space-y-2 w-[80%] mx-auto sm:py-10 sm:px-4 sm:shadow-xl rounded-md'> 
