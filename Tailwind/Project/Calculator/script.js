@@ -12,6 +12,12 @@ function remove(){
 }
 
 function Calculate(){
-    let display = document.querySelector('#display');
-    display.value = eval(display.value);
+    let blank = document.querySelector('#display').value;
+    if(blank == ''){
+        return;
+    }
+    else {
+        let display = document.querySelector('#display');
+        display.value = eval(display.value);
+    }
 }
